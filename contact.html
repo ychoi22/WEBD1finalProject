@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUNIQUE HOME - Contact</title>
+    <link rel="stylesheet" type="text/css" href="project4.css">
+    <script src="js/project4.js"></script>
+    <script src="js/fuctions.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poltawski+Nowy:ital,wght@1,600&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <h1>YUNIQUE HOME</h1>    
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>   
+    </header>
+    <h1>Contact</h1>
+    <main>
+        <form id = "contactform" action="http://localhost/intro.php" method ="post">
+            <fieldset>
+                <ul>
+                    <li><label for="fullname">Full Name:</label>
+                        <input id="fullname" name="fullname" type="text">
+                        <p class="contactError error" id="fullname_error">* Required field</p></li>
+                    <li><label for="phonenumber">Phone Number:</label>
+                        <input id="phonenumber" name="phonenumber" type="text">
+                        <p class="contactError error" id="phonenumber_error">* Required field</p>
+                        <p class="contactError error" id="phonenumberformat_error">
+                            * Invalid phone Number</li>
+                    <li><label for="email">Email:</label>
+                        <input id="email" name="email" type="text">
+                        <p class="contactError error" id="email_error">* Required field</p>
+                        <p class="contactError error" id="emailformat_error">
+                            * Invalid email address</li>
+                    <li><label for="comments">Comments:</label>
+                        <textarea name="comments" id="comments" rows="5"></textarea></li>
+                </ul>
+            </fieldset>
+            <fieldset class = "button">
+                <button type="submit" id="submit">Submit</button>
+                <button type="reset" id="clear">Reset</button>
+            </fieldset>
+        </form>
+        <aside>
+            <h4>LAST Sale!</h4>
+            <ul>
+                <li><img src="images/groundhog.jpg" alt="groundhogHouse"><br>Groundhog House</li>
+                <li><img src="images/foldable.jpg" alt="foldableHouse"><br>Foldable House</li>
+                <li><img src="images/dog.jpg" alt="dogHouse"><br>Dog House</li>          
+                <li><img src="images/dolmen.jpg" alt="dolmenHouse"><br>Dolmen House</li>
+                <li><img src="images/mudhut.jpg" alt="mudhutHouse"><br>Mudhut House</li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>
+            8910 unique Street, Winnipeg, MB, Canada 0123-4567 <a href="http://maps.google.com">Map</a>
+        </p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul> 
+    </footer>
+</body>
+</html>
