@@ -27,7 +27,7 @@ body{
    font-family: 'Ubuntu', sans-serif;
 }
 
-header{
+#header{
    width: auto;
 	border: 3px 50px;
    margin: auto;
@@ -35,45 +35,45 @@ header{
    text-align: center;
 }
 
-header h1{
+#header h1{
    justify-content: center;
    background-color: #00B8A9;
    text-align: center;
    color:#F8F3D4;
 }
    
-header nav{
+#header nav{
    background-color: #F6416C;
 }
 
-header nav ul {
+#header nav ul {
    width: 30%;
    margin: 0 auto;
    display: flex;
    justify-content: space-around;
 }
 
-header nav ul li{
+#header nav ul li{
    padding: 5px 20px;
 }
 
-header nav li:not(:last-child)::after {
+#header nav li:not(:last-child)::after {
 	content: "|";
    color:#F8F3D4;
 	padding-left: 35px;
 }
 
-header nav ul li a{
+#header nav ul li a{
    color: #F8F3D4;;
    padding: 0 30px;
 }
 
-nav ul li a:hover{
+#nav ul li a:hover{
    background-color:#00B8A9;
 	border-radius: 4px;
 }
 
-nav ul li a:focus{
+#nav ul li a:focus{
    color: black;
 }
 
@@ -158,6 +158,11 @@ form{
    padding: 10px;
 }
 
+fieldset ul li input:focus{
+   background-color:#F8F3D4;
+   color:#00B8A9;
+}
+
 fieldset{
    border-radius: 5px;
 }
@@ -177,7 +182,12 @@ textarea{
 	margin: 5px 0;
 }
 
-footer{
+textarea:focus{
+   background-color:#F8F3D4;
+   color:#00B8A9;
+}
+
+#footer{
    width: auto;
    padding: 5px 50px;
    margin: auto;
@@ -185,38 +195,38 @@ footer{
    text-align: center;
 }
 
-footer p a{
+#footer p a{
    color:#F6416C;
    padding: 0 20px;  
 }
 
-footer ul{
+#footer ul{
    display: flex;
    width: 50%;
    margin: 0 auto;
    justify-content: space-around;
 }
 
-footer ul a{
+#footer ul a{
    color:#00B8A9;
    padding: 0 20px;
 }
 
-footer a:hover{
+#footer a:hover{
    background-color:white;
 	border-radius: 4px;
 }
 
-footer a:focus{
+#footer a:focus{
    color: black;
 }
 
 @media(max-width: 800px){
-   header nav ul{
+   #header nav ul{
       display: block;
    }
 
-   header nav li:not(:last-child)::after {
+   #header nav li:not(:last-child)::after {
       display: none;
    }
 
@@ -251,7 +261,7 @@ footer a:focus{
       display: none;
    }
 
-   footer ul{
+   #footer ul{
       display: block;
    }
 }
